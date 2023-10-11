@@ -7,9 +7,10 @@ function App() {
     console.log("App rendering")
     return (
         <div>
-            <AppTitle/>
+            <AppTitle title={"This is APP component"}/>
             <Rating value ={3}/>
-            <Accordion/>
+            <Accordion title={"Menu1"}/>
+            <Accordion title={"Menu2"}/>
             <Rating value ={4}/>
             <Rating value ={1}/>
             <Rating value ={2}/>
@@ -18,9 +19,9 @@ function App() {
     );
 }
 
-function AppTitle () {
+function AppTitle (props:any) {
     console.log("AppTitle rendering")
-    return <div>This is APP component</div>
+    return <h1>{props.title}</h1>
 }
 
 export default App;
