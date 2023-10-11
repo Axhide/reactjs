@@ -6,6 +6,7 @@ function App() {
         <div>
             This is APP component
             <p>ssss</p>
+            <div>aaa</div>
         </div>
     );
 }
